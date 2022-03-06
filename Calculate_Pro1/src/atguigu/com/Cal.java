@@ -12,6 +12,7 @@ public class Cal {
         for(int x=0;x<a.length-1;x++){
             hasSwap=false;
             for(int y=0;y< a.length-1-x;y++){
+
                 if(a[y]>a[y+1]){
                     int t=a[y];
                     a[y]=a[y+1];
