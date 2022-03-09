@@ -3,7 +3,7 @@ package at.guigu.com;
 public class SenderFactory {
 
     public Sender produce(String type){
-        if(type!=null){
+
             if("email".equals(type)){
                 return new MailSender();
             }else if("Sms".equals(type)){
@@ -12,9 +12,5 @@ public class SenderFactory {
                 System.out.println("输入正确的类型");
                 return null;
             }
-        }else{
-            return null;
         }
-
-    }
 }
