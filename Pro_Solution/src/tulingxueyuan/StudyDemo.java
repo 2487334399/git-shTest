@@ -36,6 +36,7 @@ public class StudyDemo {
         for(int i=3;i<n;++i){
             result=pre+prenext;
             prenext=pre;
+
             pre=result;
         }
         return result;
