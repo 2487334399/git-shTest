@@ -1,7 +1,6 @@
-package at.Dl;
+package at.Dl1;
 
 public class Singleton {
-
     private static Singleton instance = null;
 
     /* 私有构造方法，防止被实例化 */
@@ -11,7 +10,11 @@ public class Singleton {
     /* 静态工程方法，创建实例 */
     public static Singleton getInstance() {
         if (instance == null) {
-            instance = new Singleton();
+          synchronized (instance){
+              if(instance==null){
+                  instance=new Singleton();
+              }
+          }
         }
         return instance;
     }

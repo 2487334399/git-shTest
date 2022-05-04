@@ -30,5 +30,4 @@ public class Shell_sort {
             gap = gap / 3;
         }
     }
-
 }

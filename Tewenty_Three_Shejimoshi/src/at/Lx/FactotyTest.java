@@ -7,4 +7,5 @@ public class FactotyTest {
         Sender sender=factory.produce("Mail");
         sender.Send();
     }
+
 }
