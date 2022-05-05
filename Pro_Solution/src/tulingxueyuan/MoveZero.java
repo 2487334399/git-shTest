@@ -20,4 +20,5 @@ public class MoveZero {
             nums[i]=0;
         }
     }
+
 }
