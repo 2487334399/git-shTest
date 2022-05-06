@@ -1,5 +1,5 @@
 package tulingxueyuan;
-
+/*回文列表重点难点*/
 public class isPalindrome {
     public boolean isPalindrome(ListNode head){
         ListNode fast=head,slow=head;
@@ -12,6 +12,7 @@ public class isPalindrome {
             slow=slow.next;
         }
         slow=reverse(slow);
+        /*fast指向新的子列表的头节点*/
         fast=head;
 
         while(slow!=null){
