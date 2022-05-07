@@ -4,7 +4,7 @@ public class BinarySort {
     public void sort(int []array){
         for(int i=1;i<array.length;i++){
             int temp=array[i];
-            int low=0,high=array.length-1;
+            int low=0,high=i-1;
             int mid=-1;
             while(low<=high){
                 mid=low+(high-low)/2;
