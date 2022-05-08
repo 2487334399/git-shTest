@@ -1,5 +1,7 @@
 package tulingxueyuan;
 
+
+
 public class accountClass1 {
     public static int[] sort(int[]arr){
         if(arr.length<2){
@@ -35,5 +37,4 @@ public class accountClass1 {
         }
         return arr;
     }
-
 }
