@@ -27,6 +27,7 @@ public class ScatteringAndGatheringTest {
         //等待客户连接(telnet)
         SocketChannel socketchannel=serverSocketChannel.accept();
         int messageLength=8;
+
         //循坏读取
         while(true){
             int byteRead=0;
