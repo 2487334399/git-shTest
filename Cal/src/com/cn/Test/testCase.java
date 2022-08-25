@@ -22,11 +22,10 @@ public class testCase {
         );
 
         try {
-            for (int i = 0; i < 9; i++) {
                 threadPool.execute(() -> {
                     System.out.println(Thread.currentThread().getName() + "做水果销售"+sale.obPreSale());
                 });
-            }
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
